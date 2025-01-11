@@ -5,10 +5,13 @@ package lists
 // ZUSATZBEDINGUNG: Diese Funktion darf keine Schleife verwenden.
 func MinListRecursive(nums []int) int {
 	// TODO
+
 	return 0
 }
+
+//nums = MinListRecursive(nums [i]int)
 
 // REMARKS
 // - Diese Funktion nennt man "rekursiv".
 // - Rekursion ist ein größeres Thema, das in der Vorlesung separat behandelt wird.
-//   Um die Denkweise frühzeitig zu üben, gibt es aber gelegentlich auch vorab Aufgaben dazu.
+//   Um die Denkweise frühzeitig zu üben, gibt es aber gelegentlich auch vorab Aufgaben dazu
