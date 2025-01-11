@@ -5,11 +5,18 @@ package lists
 // ZUSATZBEDINGUNG: Diese Funktion darf keine Schleife verwenden.
 func MinListRecursive(nums []int) int {
 	// TODO
-
-	return 0
+	if len(nums) == 0 { //es wird getestet, ob die Liste Leer ist
+		return 0 //wenn die Liste leer ist wird 0 ausgegeben
+	}
+	if len(nums) == 1 { //es wird getestet, ob die Lioste nur 1 Element hat
+		return nums[0] //wenn die Liste nur ein element hat wird dieses ausgegeben
+	}
+	minOfRest := MinListRecursive(nums[1:])
+	if nums[0] < minOfRest {
+		return nums[0]
+	}
+	return minOfRest
 }
-
-//nums = MinListRecursive(nums [i]int)
 
 // REMARKS
 // - Diese Funktion nennt man "rekursiv".
