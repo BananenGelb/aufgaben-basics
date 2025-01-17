@@ -4,5 +4,12 @@ package count
 // Liefer die Anzahl der Vorkommen des gesuchten Strings in der Liste.
 func Count(strings []string, search string) int {
 	// TODO
-	return 0
+	i := 0
+	for _, s := range strings {
+		if s == search {
+			i++
+		}
+
+	}
+	return i
 }
