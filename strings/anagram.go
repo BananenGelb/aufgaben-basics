@@ -5,12 +5,12 @@ package strings
 // enthält, aber nicht unbedingt in der gleichen Reihenfolge.
 func IsAnagram(s1, s2 string) bool {
 	// TODO
-	for i,s := 0;range s1; i++ {
-		if s1 == s2 {
-			return true
-		}
-
-	}
+	//for i,s := 0;range s1; i++ {
+	//	if s1 == s2 {
+	//		return true
+	//	}
+	//
+	//	}
 	return false
 }
 
