@@ -5,12 +5,10 @@ package strings
 func ConcatN(s, sep string, n int) string {
 	// TODO
 	result := ""
-	for i := 0; i < n; i++ {
-		if i > 0 {
-			result += sep
-		}
-		result += s
+	for i := 1; i < n; i++ {
+		result = result + s + sep
 
 	}
+	result = result + s
 	return result
 }
